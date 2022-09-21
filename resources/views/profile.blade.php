@@ -9,6 +9,10 @@
 
 <h1>Profile</h1>
 
+<p>{{ $user->email }}</p>
+
+<a href="/logout">Log out</a>
+
 </body>
 </html>
 
