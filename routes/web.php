@@ -26,3 +26,11 @@ Route::middleware('auth')->group(function() {
     Route::get('profile', [UserController::class, 'getProfile']);
     Route::get('logout', [UserController::class, 'logout']);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('auth/google',[\App\Http\Controllers\Auth\GoogleController::class, 'redirectToGoogle']);
+Route::get('auth/google/callback',[\App\Http\Controllers\Auth\GoogleController::class, 'handleGoogleCallback']);
+//Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
+//Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
