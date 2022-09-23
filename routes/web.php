@@ -32,5 +32,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('auth/google',[\App\Http\Controllers\Auth\GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback',[\App\Http\Controllers\Auth\GoogleController::class, 'handleGoogleCallback']);
-//Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
-//Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
+
+Route::get('auth/facebook',[\App\Http\Controllers\Auth\FacebookController::class, 'redirectToFacebook']);
+Route::get('auth/facebook/callback',[\App\Http\Controllers\Auth\FacebookController::class, 'handleFacebookCallback']);
