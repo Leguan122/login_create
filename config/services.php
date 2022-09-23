@@ -33,13 +33,13 @@ return [
     'google' => [
         'client_id' => '338259447799-oib1vdttr7j901lii1l6pu764ngo7ma4.apps.googleusercontent.com',
         'client_secret' => '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',
-        'redirect' => 'http://laravellogin.h10s.eu/auth/google/callback',
+        'redirect' => 'https://laravellogin.h10s.eu/auth/google/callback',
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_CLIENT_ID'),
-        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-        'redirect' => env('FACEBOOK_CALLBACK_URL'),
+        'client_id' => '1050443852320459',
+        'client_secret' => '5c3c35ca22ce076e536f97e0c923b7b9',
+        'redirect' => 'https://www.laravellogin.h10s.eu/auth/google/callback',
     ],
 
 ];
