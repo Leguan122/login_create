@@ -39,7 +39,7 @@ return [
     'facebook' => [
         'client_id' => '1050443852320459',
         'client_secret' => '5c3c35ca22ce076e536f97e0c923b7b9',
-        'redirect' => 'https://www.laravellogin.h10s.eu/auth/google/callback',
+        'redirect' => 'https://www.laravellogin.h10s.eu/auth/facebook/callback',
     ],
 
 ];
